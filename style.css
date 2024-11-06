@@ -1,0 +1,42 @@
+.error {
+    display:none;
+    color:red;
+}
+
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(3, 3, 175);
+    font-size:50px;
+    justify-content: center;
+    display: grid;
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.body{
+    display:grid;
+}
+
+#quiz-form{
+    padding: 15px;
+    border-style: solid;
+    display:inline-block;
+    margin: 0 auto;
+    border-radius:5px;
+}
+
+.section{
+    padding: 10px;
+    border-style:groove;
+    border-color:rgba(219, 219, 231, 0.459);
+    border-radius:5px;
+    margin-top: 10px;
+}
+
+.success{
+    display: none;
+    color:rgb(0, 129, 0);
+    padding: 15px;
+}
