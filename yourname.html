@@ -10,7 +10,7 @@
 
     <h1>QUIZ</h1>
 
-    <form id="quiz-form">
+    <form id="quiz-id">
         <div class="section">
             <label for="firstName">First Name <span class="required">*</span></label>
             <input type="text" id="firstName" name="firstName" required>
@@ -31,42 +31,42 @@
 
         <div class="section">
             <p class="p">1. Why are you taking this quiz? <span class="required">*</span></p>
-            <input type="radio" name="q1" value="Paris" id="q1a"> <label for="q1a">I guess i'm forced to</label><br>
-            <input type="radio" name="q1" value="London" id="q1b"> <label for="q1b">Business reasons</label><br>
-            <input type="radio" name="q1" value="Berlin" id="q1c"> <label for="q1c">I'd rather not say</label><br>
+            <input type="radio" name="q1" value="Paris"> <label>I guess i'm forced to</label><br>
+            <input type="radio" name="q1" value="London"> <label>Business reasons</label><br>
+            <input type="radio" name="q1" value="Berlin"> <label>I'd rather not say</label><br>
             <span class="error" id="q1Error">This question is required.</span>
         </div>
 
         <div class="section">
             <p class="p">2. Select the programming languages you know: <span class="required">*</span></p>
-            <input type="checkbox" name="q2" value="JavaScript" id="q2a"> <label for="q2a">JavaScript</label><br>
-            <input type="checkbox" name="q2" value="Python" id="q2b"> <label for="q2b">Python</label><br>
-            <input type="checkbox" name="q2" value="Java" id="q2c"> <label for="q2c">Java</label><br>
+            <input type="checkbox" name="q2" value="JavaScript"> <label>JavaScript</label><br>
+            <input type="checkbox" name="q2" value="Python"> <label>Python</label><br>
+            <input type="checkbox" name="q2" value="Java"> <label>Java</label><br>
             <span class="error" id="q2Error">Please select at least one option.</span>
         </div>
 
         <div class="section">
             <p class="p">3. What is your favorite programming language, and why? <span class="required">*</span></p>
-            <textarea name="q3" id="q3" rows="4" cols="50"></textarea>
+            <textarea name="q3" id="q3" rows="2"></textarea>
             <span class="error" id="q3Error">This question is required.</span>
         </div>
 
         <div class="section">
             <p class="p">4. Are you interested in learning a new language? If yes, why? <span class="required">*</span></p>
-            <textarea name="q4" id="q4" rows="4" cols="50"></textarea>
-            <span class="error" id="q4Error">This question is required.</span>
+            <textarea name="q4" id="q4" rows="2"></textarea>
+            <span class="error" id="q4Error">This question is required</span>
         </div>
 
         <div class="section">
             <p class="p">5. Finally, select your role <span class="required">*</span></p>
-            <input type="radio" name="q5" value="Programmer" id="q5a"> <label for="q5a">Programmer</label><br>
-            <input type="radio" name="q5" value="Designer" id="q5b"> <label for="q5b">Designer</label><br>
-            <input type="radio" name="q5" value="Strategist" id="q5c"> <label for="q5c">Strategist</label><br>
+            <input type="radio" name="q5" value="Programmer"> <label>Programmer</label><br>
+            <input type="radio" name="q5" value="Designer"> <label>Designer</label><br>
+            <input type="radio" name="q5" value="Strategist"> <label>Strategist</label><br>
             <span class="error" id="q5Error">This question is required.</span>
         </div>
 
         <button type="submit" class="section" class="submit">Submit</button>
-        <div class="success" id="successMessage">Your quiz has been successfully submitted!</div>
+        <div id="successMessage">Your quiz is now submitted!!</div>
     </form>
 
     <script src="yourname.js"></script>

@@ -19,7 +19,7 @@ h2{
     display:grid;
 }
 
-#quiz-form{
+#quiz-id{
     padding: 15px;
     border-style: solid;
     display:inline-block;
@@ -35,7 +35,7 @@ h2{
     margin-top: 10px;
 }
 
-.success{
+#successMessage{
     display: none;
     color:rgb(0, 129, 0);
     padding: 15px;
