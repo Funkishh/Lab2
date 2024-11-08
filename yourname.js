@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         function clearErrors(){
             let errors = document.querySelectorAll('.error');
             for(let error of errors){
-                error.classList.remove('error');
+                error.style.display = 'none';
             }
         }
         
@@ -29,8 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const lastNameInput = document.getElementById('lastName');
 
         /* hiding errors if there are none */
-        function hideError(error) {
-            const errorElement = document.getElementById(error);
+        function hideError(errorMsg) {
+            const errorElement = document.getElementById(errorMsg);
+            
             if (errorElement) {
                 errorElement.style.display = 'none';
             }
@@ -114,9 +115,10 @@ document.addEventListener('DOMContentLoaded', function () {
         } 
     });
 
-    /* Showing error message in the correct area */
-    function showError(elementId) {
-        document.getElementById(elementId).style.display = 'block';
+    /* Showing error message (in the correct area) */
+    function showError(errorMsg) {
+        document.getElementById(errorMsg).style.display = 'block';
+        errorElement.classList.add('error');
     }
 
 });
