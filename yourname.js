@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const lastNameInput = document.getElementById('lastName');
 
         /* hiding errors if there are none */
-        function hideError(elementId) {
-            const errorElement = document.getElementById(elementId);
+        function hideError(error) {
+            const errorElement = document.getElementById(error);
             if (errorElement) {
                 errorElement.style.display = 'none';
             }
@@ -91,13 +91,6 @@ document.addEventListener('DOMContentLoaded', function () {
             hideError ('q2Error');
         }
 
-        const q3 = document.querySelector('#q3').value.trim();
-        if (!q3) {
-            showError('q3Error');
-            areErrors = true;
-        } else {
-            hideError ('q3Error');
-        }
 
         const q4 = document.querySelector('#q4').value.trim();
         if (!q4)  {
